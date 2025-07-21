@@ -1,4 +1,4 @@
-# 📦 Memory Devices in a Computer
+# 📦 Lecture 04: Memory Devices in a Computer
 
 ---
 
