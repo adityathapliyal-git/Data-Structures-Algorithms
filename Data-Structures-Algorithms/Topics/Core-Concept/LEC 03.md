@@ -1,4 +1,4 @@
-# 🧠 Memory Organization of a Computer
+# 🧠 Lecture 03:Memory Organization of a Computer
 
 ---
 
