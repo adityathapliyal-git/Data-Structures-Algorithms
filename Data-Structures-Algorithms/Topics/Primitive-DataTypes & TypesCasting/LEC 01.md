@@ -1,5 +1,4 @@
-
-# 📘 Lecture 01: Data Types Introduction
+# Data Types Introduction
 
 ---
 
