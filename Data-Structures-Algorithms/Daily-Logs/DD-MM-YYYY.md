@@ -12,3 +12,6 @@
 
 ## 🔜 Next:
 - <What to study/solve tomorrow>
+---
+ # NOTE : Sundays are Holidays , BUT you can always work more !
+ 
