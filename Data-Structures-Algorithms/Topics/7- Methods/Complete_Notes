@@ -1,0 +1,163 @@
+# COMPLETE NOTES : METHODS
+
+## 📘 Programming Paradigms
+
+Java supports multiple paradigms. Before diving into methods, it's essential to understand the styles of programming:
+
+### 1. Unstructured Style
+- Code is written as a single, continuous block.
+- Difficult to read, debug, or modify.
+- Uses `goto` and unstructured control flow.
+- Supports only basic data types.
+- Suitable for small, simple programs.
+- **Examples**: Early versions of BASIC, COBOL, FORTRAN.
+
+### 2. Structured / Procedural / Functional Style
+- Programs are broken down into small, manageable blocks of code (functions).
+- Easy to read, modify, and debug.
+- Supports structured control statements like `if`, `else`, `for`, `while`, etc.
+- Suitable for larger, complex programs.
+- **Examples**: C, C++, Visual Basic.
+
+### 3. Object-Oriented Style
+- Code is organized into **classes** and **objects**.
+- Methods represent the **behavior** of objects.
+- Emphasizes encapsulation, inheritance, and polymorphism.
+- Fully supported in Java.
+
+---
+
+## 🔧 What is a Method?
+
+A **method** is a block of code or a group of statements written together to perform a specific task. Think of it as a **function**, but associated with an object.
+
+### ✅ Key Characteristics:
+- Methods run **only when called**.
+- They **can receive data** (parameters).
+- They **can return data** (return type).
+- Can be **user-defined** or **standard library methods**.
+
+---
+
+## ❓ Why Are Methods Important?
+
+- Promote **code reusability**.
+- Make code **easy to read**, **modular**, and **debuggable**.
+- Avoid repetition (DRY principle).
+- Simplify **complex problems** by breaking them into smaller methods.
+
+**Example Use Cases**:
+- A method to draw a rectangle.
+- A method to color a shape.
+- A method to calculate a result or display a message.
+
+---
+
+## 🧱 Structure of a Method in Java
+
+A method has the following six components:
+
+| Component         | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| 1. Modifiers       | Access level: `public`, `private`, `protected`, or default (no modifier).  |
+| 2. Return Type     | Data type of the value the method returns (or `void` if no return).         |
+| 3. Method Name     | Identifier; should reflect the behavior.                                    |
+| 4. Parameter List  | Input data; specified inside `()` as comma-separated `type name` pairs.     |
+| 5. Exception List  | Optional; exceptions that the method might throw.                           |
+| 6. Method Body     | The block of code to be executed `{ ... }`.                                 |
+
+---
+
+## 🧭 Access Specifiers in Java
+
+| Access Modifier | Scope                                                                 |
+|-----------------|-----------------------------------------------------------------------|
+| `private`       | Accessible only within the declared class.                           |
+| `public`        | Accessible from anywhere in the program.                             |
+| `protected`     | Accessible within the package and by subclasses outside the package. |
+| default         | (No modifier) Accessible only within the package.                    |
+
+---
+
+## 🧪 Examples
+
+### 🔹 Example 1: Simple Method
+
+```java
+public class Main {
+  static void welcome() {
+    System.out.println("Welcome to Physics Wallah");
+  }
+
+  public static void main(String[] args) {
+    welcome();  // Method call
+  }
+}
+```
+
+### 🔹 Example 2: Method with Return Value
+
+```java
+class Main {
+  public int addition(int p, int q) {
+    return p + q;
+  }
+
+  public static void main(String[] args) {
+    Main obj = new Main();
+    int answer = obj.addition(40, 60);
+    System.out.println("Sum is: " + answer);
+  }
+}
+```
+
+### 🔹 Example 3: Method with No Return
+
+```java
+class Main {
+  public void addition(int p, int q) {
+    int add = p + q;
+    System.out.println("Sum is: " + add);
+  }
+
+  public static void main(String[] args) {
+    Main obj = new Main();
+    obj.addition(40, 60);
+  }
+}
+```
+
+---
+
+## 📚 Standard Library Methods in Java
+
+Java provides many built-in methods in standard classes like `Math`, `System`, etc.
+
+| Method         | Class           | Description                              |
+|----------------|------------------|------------------------------------------|
+| `print()`      | `System.out`     | Prints to the console.                   |
+| `sqrt(x)`      | `Math`           | Returns square root of `x`.              |
+| `floor(x)`     | `Math`           | Rounds down to the nearest whole number. |
+
+### 🔹 Example: Using Standard Library Method
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Square root of 16 is: " + Math.sqrt(16));
+  }
+}
+```
+
+---
+
+## 🛠 Summary
+
+- Methods allow modular, reusable, clean coding.
+- Defined with `access_modifier return_type methodName(params)`.
+- Called using `object.methodName(arguments)`.
+- Can be user-defined or standard (built-in).
+- Encourage better code design in object-oriented programming.
+
+---
+
