@@ -86,7 +86,7 @@ A method has the following six components:
 ```java
 public class Main {
   static void welcome() {
-    System.out.println("Welcome to Physics Wallah");
+    System.out.println("my world");
   }
 
   public static void main(String[] args) {
